@@ -1,0 +1,14 @@
+URL : http://localhost:8080/product/
+POST
+
+{
+    "name" : "iPhone",
+    "price": 1100,
+    "quantity": 3
+}
+
+{
+    "name" : "Samsung",
+    "price": 2100,
+    "quantity": 2
+}
