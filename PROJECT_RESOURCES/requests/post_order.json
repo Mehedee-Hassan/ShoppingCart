@@ -1,0 +1,9 @@
+// http://localhost:8082/order/placeOrder
+
+
+{
+    "productId" : 1,
+    "totalAmount": 2400,
+    "quantity": 4,
+    "paymentMode": "DEBIT_CARD"
+}
