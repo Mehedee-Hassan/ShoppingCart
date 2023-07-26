@@ -14,7 +14,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping("/")
+    @PostMapping()
     public ResponseEntity<Long> addProduct(@RequestBody ProductRequest productRequest){
         long productId = productService.addProduct(productRequest);
 
@@ -22,10 +22,22 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductResponse> getProductById(@PathVariable("id") long productId){
+    public ResponseEntity<ProductResponse> getProductById(
+            @PathVariable("id") long productId
+    ){
         ProductResponse productResponse =
                 productService.getProductById(productId);
         return new ResponseEntity<>(productResponse,HttpStatus.OK);
+    }
+
+    @PutMapping("/reduceQuantity/{id}")
+    public ResponseEntity<Void> reduceQuantity(
+            @PathVariable("id") long productId,
+            @RequestParam long quantity
+    ){
+        productService.reduceQuantity(productId,quantity);
+        return new ResponseEntity<>(HttpStatus.OK);
+
     }
 
 }

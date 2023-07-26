@@ -20,7 +20,8 @@ public class ProductService implements IProductService{
 
     @Override
     public long addProduct(ProductRequest productRequest) {
-       log.info("Adding product");
+       log.info("Adding product quantity :{}",productRequest.getQuality());
+       log.info("Adding product name :{}",productRequest.getName());
 
         Product product =
                 Product.builder()
@@ -46,5 +47,29 @@ public class ProductService implements IProductService{
 
         return new ModelMapper()
                 .returnProductResponseFromProduct(product);
+    }
+
+    @Override
+    public void reduceQuantity(long productId, long quantity) {
+        log.info("Reduce Quantity {} for ID : {}",quantity,productId);
+
+        Product product = productRepositoy
+                .findById(productId)
+                .orElseThrow(()->new ProductServiceCustomException(
+                        "Product with given Id not found",
+                        "PRODUCT_NOT_FOUND"
+                ));
+
+        if(product.getQuantity() < quantity){
+            throw new ProductServiceCustomException(
+                    "Product does not have sufficient Quantity",
+                    "INSUFFICIENT_QUANTITY"
+            );
+        }
+
+        product.setQuantity(product.getQuantity() - quantity);
+        productRepositoy.save(product);
+
+        log.info("Product Quantity update Successfully");
     }
 }
