@@ -20,13 +20,13 @@ public class ProductService implements IProductService{
 
     @Override
     public long addProduct(ProductRequest productRequest) {
-       log.info("Adding product quantity :{}",productRequest.getQuality());
+       log.info("Adding product quantity :{}",productRequest.getQuantity());
        log.info("Adding product name :{}",productRequest.getName());
 
         Product product =
                 Product.builder()
                         .productName(productRequest.getName())
-                        .quantity(productRequest.getQuality())
+                        .quantity(productRequest.getQuantity())
                         .price(productRequest.getPrice())
                         .build();
 
