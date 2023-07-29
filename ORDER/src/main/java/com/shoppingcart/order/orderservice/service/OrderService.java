@@ -2,6 +2,7 @@ package com.shoppingcart.order.orderservice.service;
 
 import com.netflix.discovery.converters.Auto;
 import com.shoppingcart.order.orderservice.entity.Order;
+import com.shoppingcart.order.orderservice.external.client.ProductService;
 import com.shoppingcart.order.orderservice.model.OrderRequest;
 import com.shoppingcart.order.orderservice.repository.OrderRepository;
 import lombok.extern.log4j.Log4j2;
@@ -14,9 +15,11 @@ import java.time.Instant;
 @Log4j2
 public class OrderService implements IOrderService{
 
-
     @Autowired
     private OrderRepository orderRepository;
+
+    @Autowired
+    private ProductService productService;
     @Override
     public long placeOrder(OrderRequest orderRequest) {
 
@@ -29,6 +32,8 @@ public class OrderService implements IOrderService{
         *  - CANCELLED
         * */
         log.info("Placing order request :{}",orderRequest);
+
+        productService.reduceQuantity(orderRequest.getProductId(),orderRequest.getQuantity());
 
         Order order = Order.builder()
                 .amount(orderRequest.getTotalAmount())
