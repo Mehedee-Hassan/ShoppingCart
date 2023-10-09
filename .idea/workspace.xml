@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce08796e-4a5b-4ff4-8ea2-d58e9a51dc83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/model/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <workItem from="1690294648872" duration="985000" />
       <workItem from="1690627037765" duration="2427000" />
       <workItem from="1696735800210" duration="227000" />
-      <workItem from="1696773631535" duration="1430000" />
+      <workItem from="1696773631535" duration="1946000" />
     </task>
     <servers />
   </component>

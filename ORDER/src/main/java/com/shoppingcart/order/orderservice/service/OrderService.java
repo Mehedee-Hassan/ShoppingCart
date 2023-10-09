@@ -35,7 +35,7 @@ public class OrderService implements IOrderService{
 
         productService.reduceQuantity(orderRequest.getProductId(),orderRequest.getQuantity());
 
-        Order order = Order.builder()
+        Order order = Order.Builder()
                 .amount(orderRequest.getTotalAmount())
                 .orderStatus("CREATED")
                 .productId(orderRequest.getProductId())

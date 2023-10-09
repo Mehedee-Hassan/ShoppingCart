@@ -87,4 +87,49 @@ public class Order {
     private String orderStatus;
     @Column(name="AMOUNT")
     private long amount;
+
+
+
+    // create builder
+    public static class builder{
+        private long id;
+        private long productId;
+        private long quantity;
+        private Instant orderDate;
+        private String orderStatus;
+        private long amount;
+        public static getInstance(){
+            return new builder();
+        }
+
+        public void id(long id) {
+            this.id = id;
+            return this;
+        }
+
+        public void productId(long productId) {
+            this.productId = productId;
+            return this;
+        }
+
+        public void quantity(long quantity) {
+            this.quantity = quantity;
+            return this;
+        }
+
+        public void orderDate(Instant orderDate) {
+            this.orderDate = orderDate;
+            return this;
+        }
+
+        public void orderStatus(String orderStatus) {
+            this.orderStatus = orderStatus;
+            return this;
+        }
+
+        public void amount(long amount) {
+            this.amount = amount;
+            return this;
+        }
+    }
 }
