@@ -1,19 +1,19 @@
 package com.shoppingcart.order.orderservice.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-
 public class OrderRequest {
 
 
     public OrderRequest(Builder builder){
         this.productId = builder.productId;
+    }
+
+    public OrderRequest(long productId, long totalAmount, long quantity, PaymentMode paymentMode) {
+        this.productId = productId;
+        this.totalAmount = totalAmount;
+        this.quantity = quantity;
+        this.paymentMode = paymentMode;
     }
 
     private long productId;
