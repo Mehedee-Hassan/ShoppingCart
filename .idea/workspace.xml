@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce08796e-4a5b-4ff4-8ea2-d58e9a51dc83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PROJECT_RESOURCES/requests/create_product.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/src/main/java/com/shoppingcart/configserver/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/src/main/java/com/shoppingcart/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/src/test/java/com/shoppingcart/configserver/configserver/ConfigServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/src/test/java/com/shoppingcart/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_RESOURCES/requests/create_product.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,20 +32,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mehed/Documents/code/microservice/tutorial/ShoppingCart/CONFIG_SERVER",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mehed/Documents/code/microservice/tutorial/ShoppingCart/CONFIG_SERVER&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mehed\Documents\programming\ShoppingCart\CONFIG_SERVER\src\test\java\com\shoppingcart\configserver" />
+      <recent name="C:\Users\mehed\Documents\programming\ShoppingCart\CONFIG_SERVER\src\main\java\com\shoppingcart\configserver" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
