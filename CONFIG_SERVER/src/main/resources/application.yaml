@@ -9,9 +9,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mehedeehassan-paypay/spring-boot-config
+          uri: https://github.com/Mehedee-Hassan/sb-ms-config-server
           clone-on-start: true
-
-
-
-

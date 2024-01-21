@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce08796e-4a5b-4ff4-8ea2-d58e9a51dc83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CONFIG_SERVER/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/model/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/src/main/java/com/shoppingcart/configserver/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/src/main/java/com/shoppingcart/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONFIG_SERVER/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CONFIG_SERVER/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORDER/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ORDER/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/ORDER/src/main/java/com/shoppingcart/order/orderservice/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRODUCT/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PRODUCT/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRODUCT/src/main/java/com/shoppingcart/product/productservice/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/PRODUCT/src/main/java/com/shoppingcart/product/productservice/entity/Product" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVICE_REGISTRY/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SERVICE_REGISTRY/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +23,18 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="service_with_lomb" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -32,8 +49,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mehed/Documents/code/microservice/tutorial/ShoppingCart/CONFIG_SERVER&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mehed/Documents/programming/sb3-path&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -42,17 +60,67 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mehed\Documents\programming\ShoppingCart\CONFIG_SERVER\src\main\java\com\shoppingcart\configserver" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Shell Script.mvnw">
+    <configuration name="PRODUCT" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/PRODUCT" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="mvnw" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/CONFIG_SERVER/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/CONFIG_SERVER" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Maven.PRODUCT" />
+      <item itemvalue="Shell Script.mvnw" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.mvnw" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -71,6 +139,8 @@
       <workItem from="1696735800210" duration="227000" />
       <workItem from="1696773631535" duration="1946000" />
       <workItem from="1696820464257" duration="1863000" />
+      <workItem from="1705720097097" duration="9371000" />
+      <workItem from="1705811593301" duration="77000" />
     </task>
     <servers />
   </component>
